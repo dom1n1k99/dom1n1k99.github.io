@@ -44,6 +44,7 @@
 	padding: 15px 24px;
 	text-align: center;
 	transition: background 0.3s;
+	text-decoration: none;
 }
 .cookiePopupBoxContainer .cookieButton a:hover { 
 	cursor: pointer;
