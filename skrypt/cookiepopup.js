@@ -55,7 +55,7 @@ function eraseCookie(name) {
 function cookiePopupBox() {
   if (!getCookie('cookiePopupDismiss')) {
     document.body.innerHTML += '<div class="cookiePopupBoxContainer" id="cookiePopupBoxContainer"><div class="cookieTitle"><p>' + cookiePopupTitle + '</p></div><div class="cookieDesc"><p>' + cookiePopupDesc + ' ' + cookiePopupLink + '</p></div><div class="cookieButton"><a href=
-#" onClick="cookiePopupDismiss();">' + cookiePopupButton + '</a></div></div>';
+"#" onClick="cookiePopupDismiss();">' + cookiePopupButton + '</a></div></div>';
 	pureFadeIn("cookiePopupBoxContainer");
   }
 }
