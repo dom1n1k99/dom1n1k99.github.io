@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6ZE3HQWWFY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6ZE3HQWWFY');
+</script>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Restauracja Gościniec Ogrodowy w Pińczycach">
+        <meta name="author" content="" />
+        <title>Gościniec Ogrodowy - Restauracja w Pińczycach</title>
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/cookiepopup.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+      <script src="js/cookie.js"></script>
+        <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" id="mainNav">
+            <div class="container px-4">
+                <a class="navbar-brand" href="#page-top">Gościniec Ogrodowy</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">O nas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#photos">Zdjęcia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header class=" text-white" id="baner">
+            <div class="container px-4 text-center" >
+                <h1 class="fw-bolder">Gościniec Ogrodowy</h1>
+                <p class="lead">Restauracja w Pińczycach</p>
+                <a class="btn btn-lg btn-dark" id="button1" href="#about">Dowiedz się więcej!</a>
+            </div>
+        </header>
+    
+        <section id="about">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>O nas</h2>
+                        <p class="lead">Serdecznie zapraszamy Państwa na codzienne obiady, uroczyste kolacje i niezliczone jubileuszowe fety. Oprócz codziennej karty menu organizujemy kameralne przyjęcia, bankiety oraz wszelkiego rodzaju imprezy okolicznościowe. Podchodzimy do każdego przyjęcia indywidualnie, przywiązujemy ogromną wagę do poznania potrzeb i oczekiwań naszych klientów. Wszystkie dania przyrządzamy ze świeżych, naturalnych składników od sprawdzonych, regionalnych dostawców. W okresie letnim dysponujemy przestronnym tarasem. Do państwa dyspozycji są dwie sale w całości klimatyzowane, dodatkowym atutem jest parking. </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+  
+        <section class="bg-light" id="photos">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="carousel">
+                        <ul>
+                          <li><img src="img/zewnatrz.jpg" alt="Zdjęcie 1" width="682px" height="512px"></li>
+                          <li><img src="img/sala.jpg" alt="Zdjęcie 2" width="682px" height="512px"></li>
+                          <li><img src="img/drugasala.jpg" alt="Zdjęcie 3" width="682px" height="512px"" ></li>
+                        </ul>
+                              
+        
+                      <a class="prev" onclick="plusSlide(-1)">❮</a>
+                      <a class="next" onclick="plusSlide(1)">❯</a>
+                      
+                      </div>
+                
+                      <script>
+                        var slideIndex = 1;
+                        showSlide(slideIndex);
+                      
+                        function plusSlide(n) {
+                          showSlide(slideIndex += n);
+                        }
+                      
+                        function showSlide(n) {
+                          var i;
+                          var slides = document.querySelectorAll('.carousel li');
+                      
+                          if (n > slides.length) {
+                            slideIndex = 1;
+                          }
+                          if (n < 1) {
+                            slideIndex = slides.length;
+                          }
+                      
+                          for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = 'none';
+                          }
+                      
+                          slides[slideIndex - 1].style.display = 'block';
+                        }
+                      </script>
+                      
+                </div>
+            </div>
+        </section>
+    
+        <section id="contact">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>Kontakt</h2>
+                        <p class="lead">Zapraszamy do kontaktu telefonicznego!
+                          tel: <strong>+48 502 309 680</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="py-5" id="greenfooter">
+            <div class="container px-4"><p class="m-0 text-center text-white"> Gościniec Ogrodowy 2024</p></div>
+        </footer>
+       
+    </body>
+</html>
